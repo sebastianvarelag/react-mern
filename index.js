@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express');
 require('dotenv').config();
 const {dbConnection} = require('./db/config') 
@@ -13,6 +15,9 @@ dbConnection();
 
 app.use( cors());
 
+//directorio publico
+app.use( express.static('public') );
+
 //Lectura y parseo del body
 app.use( express.json() );
 
@@ -26,8 +31,9 @@ app.use('/api/events', require('./routes/events'));
 // TODO CRUD: Eventos
  
 //Directorio publico
-app.use( express.static('public') );
- 
+app.use('*', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+})
  
  
 //Escuchar peticiones

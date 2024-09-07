@@ -1,5 +1,5 @@
 ####### AUTH REGISTER
-POST http://localhost:4001/api/auth/new
+POST https://react-mern-production.up.railway.app/api/auth/new
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ####### AUTH LOGIN 
-POST http://localhost:4001/api/auth/
+POST https://react-mern-production.up.railway.app/api/auth/
 Content-Type: application/json
 
 {
@@ -19,31 +19,31 @@ Content-Type: application/json
 }
 
 ################################
-GET http://localhost:4001/api/auth/renew
+GET https://react-mern-production.up.railway.app/api/auth/renew
 Content-Type: application/json
 Accept: application/json
 X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MTM2MTY2LCJleHAiOjE3MjUxNDMzNjZ9.SZZANoyv-8ays4ehDLNIdPo_eu9AUeBZ1YsDNKBudcE
 
 ####### GET EVENTS
-GET http://localhost:4001/api/events
-X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzA0NjYwLCJleHAiOjE3MjUzMTE4NjB9.SQLQBIay-AMFDwLsOS_JVQjLSYJ9zmYGmTGS0hg04r4
+GET https://react-mern-production.up.railway.app/api/events
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzkyMTA1LCJleHAiOjE3MjUzOTkzMDV9.DKF6QmkUMG-nQfyjqYLLHFvt-r3H644cjd6Qxmpnpfg
 
 ####### CREATE EVENT
-POST http://localhost:4001/api/events/create/
+POST https://react-mern-production.up.railway.app/api/events/create/
 Content-Type: application/json
-X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzA0NjYwLCJleHAiOjE3MjUzMTE4NjB9.SQLQBIay-AMFDwLsOS_JVQjLSYJ9zmYGmTGS0hg04r4
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzkyMTA1LCJleHAiOjE3MjUzOTkzMDV9.DKF6QmkUMG-nQfyjqYLLHFvt-r3H644cjd6Qxmpnpfg
 
 {
-  "title": "New Event2",
+  "title": "New Event23",
   "start": 1,
   "end": 100000,
-  "notes": "Comprar el pan2"
+  "notes": "Comprar el pan23"
 }
 
 ####### UPDATE EVENT
-PUT http://localhost:4001/api/events/66d6153f0167e52e6fd0192a/
+PUT https://react-mern-production.up.railway.app/api/events/66d7652f43603b9782935f84/
 Content-Type: application/json
-X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzA0NjYwLCJleHAiOjE3MjUzMTE4NjB9.SQLQBIay-AMFDwLsOS_JVQjLSYJ9zmYGmTGS0hg04r4
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzkyMTA1LCJleHAiOjE3MjUzOTkzMDV9.DKF6QmkUMG-nQfyjqYLLHFvt-r3H644cjd6Qxmpnpfg
 
 {
   "title": "Event updateded",
@@ -53,6 +53,6 @@ X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4Mz
 }
 
 ####### DELETE EVENT
-DELETE http://localhost:4001/api/events/66d6153f0167e52e6fd0192a/
+DELETE https://react-mern-production.up.railway.app/api/events/66d7652f43603b9782935f84/
 Content-Type: application/json
-X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzA0NjYwLCJleHAiOjE3MjUzMTE4NjB9.SQLQBIay-AMFDwLsOS_JVQjLSYJ9zmYGmTGS0hg04r4
+X-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQzNTA3ZWE4ZDQ3NTM4MzUxNzlhZjciLCJuYW1lIjoiU2ViYXN0aWFuIiwiaWF0IjoxNzI1MzkyMTA1LCJleHAiOjE3MjUzOTkzMDV9.DKF6QmkUMG-nQfyjqYLLHFvt-r3H644cjd6Qxmpnpfg

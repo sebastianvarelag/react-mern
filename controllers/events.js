@@ -78,11 +78,6 @@ const updateEvent = async(req, res = response) =>{
       msg: 'Contact an administrator'
     });
   }
-
-  res.json({
-    ok: true,
-    eventoId
-  })
 }
 
 const deleteEvent = async(req, res = response) =>{
@@ -120,11 +115,6 @@ const deleteEvent = async(req, res = response) =>{
       msg: 'Contact an administrator'
     });
   }
-
-  res.json({
-    ok: true,
-    msg: 'deleteEvent'
-  })
 }
 
 
